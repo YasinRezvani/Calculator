@@ -1,0 +1,193 @@
+body {
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 0.5;
+    background-color: black;
+    
+}
+
+.calci {
+    width: 500px;
+    padding-bottom: 100px;
+    position: absolute;
+    margin-top: 223px;
+    margin-left: 485px;
+    transform: translate(50%, -50%);
+    transition: 0.25px;
+    text-align: center;
+    outline: none;
+}
+
+#display {
+    border: none;
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 300;
+    border-radius: 12px;
+    height: 40px;
+    margin: auto;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 230px;
+    margin-bottom: 5px;
+    outline: none;
+
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    padding-top: -1px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    border-radius: 20px;
+    margin: 2px 1px 2px 1px;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: #2196F3;
+    box-shadow: 1px 1px 6px 1px #2196F3;
+}
+
+#aa:hover{
+    background-color: #e53935;
+    box-shadow: 1px 1px 8px 1px #e53935;
+}
+
+.operator {
+    width: 55px;
+    height: 55px;
+    padding-top: -1px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin: 2px 1px 2px 1px;
+    cursor: pointer;
+}
+
+.operator:hover {
+    background-color: #7CB342;
+    box-shadow: 1px 1px 8px 1px #7CB342;
+}
+
+#zero {
+    width: 116px;
+    height: 55px;
+    padding-top: -1px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    border: none;
+    border-radius: 12px;
+    margin: 2px 1px 2px 1px;
+    outline: none;
+}
+
+#zero:hover{
+    background-color: #1E88E5;
+    box-shadow: 1px 1px 8px 1px #1E88E5;
+}
+
+h1{
+    position: relative;
+    color: white;
+    margin-top: 115px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 51px;
+}
+
+
+a{
+    position: relative;
+    display: inline-block;
+    color: #2196f3;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;    
+}
+a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 30px #2196f3;
+    transition-delay: 1.25s;
+}
+ a:hover .fa-heart{
+    color: #255784;
+    
+}
+a:hover .fa-coffee{
+    color: #255784;
+}
+
+.fa-coffee{
+    color: #976846;
+}
+
+.fa-heart{
+    color: #ff0000de;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    left: -100%;
+    top: 0;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+    width: 100%;
+}
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(-90deg,transparent,#2196f3);
+    width: 100%;
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+    width: 2px;
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+    width: 2px;
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

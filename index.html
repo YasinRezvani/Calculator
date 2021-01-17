@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="./img/calculator.png">
+</head>
+
+<body>
+    <h1>Online Calculator</h1>
+    <form action="index.html" name="form1" method="POST" class="calci">
+        <input type="text" id="display" name="answer">
+        <br>
+        <input type="button" value="C" class="btn" id="aa" onclick="form1.answer.value=''">
+        <input type="button" value="<" class="btn"
+            onclick="form1.answer.value= form1.answer.value.substr(0,form1.answer.value.length*1-1)">
+        <input type="button" value="00" class="btn" onclick="form1.answer.value+='00'">
+        <input type="button" value="/" class="operator" onclick="form1.answer.value+='/'">
+        <br>
+        <input type="button" value="7" class="btn" onclick="form1.answer.value+='7'">
+        <input type="button" value="8" class="btn" onclick="form1.answer.value+='8'">
+        <input type="button" value="9" class="btn" onclick="form1.answer.value+='9'">
+        <input type="button" value="*" class="operator" onclick="form1.answer.value+='*'">
+        <br>
+        <input type="button" value="4" class="btn" onclick="form1.answer.value+='4'">
+        <input type="button" value="5" class="btn" onclick="form1.answer.value+='5'">
+        <input type="button" value="6" class="btn" onclick="form1.answer.value+='6'">
+        <input type="button" value="-" class="operator" onclick="form1.answer.value+='-'">
+        <br>
+        <input type="button" value="1" class="btn" onclick="form1.answer.value+='1'">
+        <input type="button" value="2" class="btn" onclick="form1.answer.value+='2'">
+        <input type="button" value="3" class="btn" onclick="form1.answer.value+='3'">
+        <input type="button" value="+" class="operator" onclick="form1.answer.value+='+'">
+        <br>
+        <input type="button" value="0" id="zero" onclick="form1.answer.value+='0'">
+        <input type="button" value="." class="btn" onclick="form1.answer.value+='.'">
+        <input type="button" value="=" class="operator" onclick="form1.answer.value=eval(form1.answer.value)">
+    </form>
+
+    <a href="#" style="    font-family: consolas;
+    letter-spacing: -1px;
+    margin-left: 77px;
+    margin-top: -10px;">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Make With <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> By Yasin Rezvani
+    </a>
+</body>
+
+<script src="js/all.min.js"></script>
+
+</html>
